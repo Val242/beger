@@ -1,6 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
-import { StaticImageData } from 'next/image';
+import React from "react";
+import Image, { StaticImageData } from "next/image";
 
 interface PaymentLogo {
   id: number;
@@ -14,22 +13,37 @@ interface FooterProps {
 
 export default function Footer({ paymentLogos }: FooterProps) {
   return (
-    <div className='p-8'>
-      <div className='border-t border-t-gray-300 p-8 flex justify-center items-center gap-8'>
-        {paymentLogos.map((payment) => (
-          <div key={payment.id} className='shrink-0 '>
-            <Image 
-              src={payment.image}
-              alt={payment.alt}
-              width={80}
-              height={50}
-              className='object-contain'
-            />
-          </div>
-        ))}
+    <footer className="p-4 sm:p-6 md:p-8">
+      {/* Payment logos */}
+      <div className="border-t border-gray-300 pt-6">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
+          {paymentLogos.map((payment) => (
+            <div
+              key={payment.id}
+              className="flex items-center justify-center"
+            >
+              <Image
+                src={payment.image}
+                alt={payment.alt}
+                width={80}
+                height={50}
+                className="
+                  object-contain
+                  w-[60px] sm:w-[70px] md:w-[80px]
+                  h-auto
+                "
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <p className='text-center mt-8'>© {new Date().getFullYear()}, Berger Industries Inc Powered by Shopify
-Privacy policy</p>
-    </div>
-  )
+
+      {/* Text */}
+      <p className="text-center text-xs sm:text-sm mt-6 text-gray-600 px-2">
+        © {new Date().getFullYear()} Berger Industries Inc. Powered by Shopify
+        <br className="sm:hidden" />
+        <span className="block sm:inline"> Privacy policy</span>
+      </p>
+    </footer>
+  );
 }
