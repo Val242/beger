@@ -1,0 +1,31 @@
+import FeaturedProducts from "@/components/FeaturedProducts";
+import { featuredProducts } from "@/data/featuredProducts";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export default async function Page({ params }: Props) {
+  const { slug } = await params;
+
+  const products = featuredProducts.filter(
+    (item) => item.slug === slug
+  );
+
+  return (
+    <div>
+      <h1 className="text-3xl font-bold">{slug}</h1>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+        {products.map((product) => (
+                <div key={product.id}>
+                  <FeaturedProducts
+                    image={product.image}
+                    description={product.description}
+                  />
+                </div>
+        ))}
+      </div>
+    </div>
+  );
+}
