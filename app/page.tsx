@@ -19,6 +19,7 @@ import googlePay from '@/images/googlePay.png';
 import Products from '@/components/Products';
 import bg1 from '@/images/bg1.jpg'
 import bg2 from '@/images/bg2.jpg'
+//ssh
 
 function page() {
   const  paymentLogos = [
