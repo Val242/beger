@@ -30,7 +30,7 @@ export default function FeaturedProducts({
           alt={image.alt || description}
           className="
             w-full
-            h-[320px] sm:h-[420px] md:h-[520px]
+            h-80 sm:h-105 md:h-130
             object-cover
             transition-transform
             duration-300

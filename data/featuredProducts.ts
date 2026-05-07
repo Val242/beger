@@ -4,6 +4,8 @@ import product3 from '@/images/products/product3.jpg'
 import fender from '@/images/products/fender.jpg'
 import fenders from '@/images/products/fenders.webp'
 import frameBrackets from '@/images/frameBrackets.webp'
+
+//Brackets
 import kenworth1 from '@/images/products/kenworth1.webp'
 import kenworth2 from '@/images/products/kenworth2.webp'
 import peterbilt4 from '@/images/products/peterbilt4.webp'
@@ -32,6 +34,30 @@ import angledBrackets from "@/images/brackets/angledBrackets.webp"
 import peterbiltFlattopBrackets from "@/images/brackets/peterbiltFlattopBrackets.jpg"
 import peterbilt379Brackets from "@/images/brackets/peterbilt379Brackets.webp"
 
+//BreatherPanels
+import breatherPanelOne from "@/images/breatherPanels/breatherPanelOne.webp"
+import breatherPanelTwo from "@/images/breatherPanels/breatherPanelTwo.webp"
+import breatherPanelThree from "@/images/breatherPanels/breatherPanelThree.webp"
+import breatherPanelFour from "@/images/breatherPanels/breatherPanelFour.webp"
+import breatherPanelFive from "@/images/breatherPanels/breatherPanelFive.webp"
+import breatherPanelSix from "@/images/breatherPanels/breatherPanelSix.webp"
+import breatherPanelSeven from "@/images/breatherPanels/breatherPanelSeven.webp"
+import breatherPanelEight from "@/images/breatherPanels/breatherPanelEight.webp"
+import breatherPanelNine from "@/images/breatherPanels/breatherPanelNine.webp"
+import breatherPanelTen from "@/images/breatherPanels/breatherPanelTen.webp"
+import breatherPanelEleven from "@/images/breatherPanels/breatherPanelEleven.webp"
+import breatherPanelTwelve from "@/images/breatherPanels/breatherPanelTwelve.webp"
+
+//bumpers
+import bumperOne from "@/images/bumpers/bumperOne.jpg"
+import bumperTwo from "@/images/bumpers/bumperTwo.avif"
+import bumperThree from "@/images/bumpers/bumperThree.avif"
+import bumperFour from "@/images/bumpers/bumperFour.jpg"
+import bumperFive from "@/images/bumpers/bumperFive.webp"
+import bumperSix from "@/images/bumpers/bumperSix.avif"
+
+//fender
+// import fender from "@/images/fender/fender.jpg"
 
 export const featuredProducts = [
   {
@@ -67,7 +93,7 @@ export const featuredProducts = [
     name: "Fenders",
     slug: "fenders",
     image: { src: fenders.src, height: fenders.height, width: fenders.width, alt: "fenders Product" },
-    description: "fenders"
+    description: "Heavy duty 3/16 aluminium half fenders"
   },
   {
     id: 6,
@@ -476,6 +502,232 @@ export const groupedProducts = [
       alt: "Peterbilt 379 Brackets"
     },
     description: "peterbilt 379 brackets"
-  }
+  },
+  // =========================
+// 🆕 BREATHER PANEL PRODUCTS
+// =========================
+
+{
+  id: 34,
+  name: "Breather Panel One",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelOne.src,
+    height: breatherPanelOne.height,
+    width: breatherPanelOne.width,
+    alt: "Breather Panel One"
+  },
+  description: "breather panel one"
+},
+{
+  id: 35,
+  name: "Breather Panel Two",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelTwo.src,
+    height: breatherPanelTwo.height,
+    width: breatherPanelTwo.width,
+    alt: "Breather Panel Two"
+  },
+  description: "breather panel two"
+},
+{
+  id: 36,
+  name: "Breather Panel Three",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelThree.src,
+    height: breatherPanelThree.height,
+    width: breatherPanelThree.width,
+    alt: "Breather Panel Three"
+  },
+  description: "breather panel three"
+},
+{
+  id: 37,
+  name: "Breather Panel Four",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelFour.src,
+    height: breatherPanelFour.height,
+    width: breatherPanelFour.width,
+    alt: "Breather Panel Four"
+  },
+  description: "breather panel four"
+},
+{
+  id: 38,
+  name: "Breather Panel Five",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelFive.src,
+    height: breatherPanelFive.height,
+    width: breatherPanelFive.width,
+    alt: "Breather Panel Five"
+  },
+  description: "breather panel five"
+},
+{
+  id: 39,
+  name: "Breather Panel Six",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelSix.src,
+    height: breatherPanelSix.height,
+    width: breatherPanelSix.width,
+    alt: "Breather Panel Six"
+  },
+  description: "breather panel six"
+},
+{
+  id: 40,
+  name: "Breather Panel Seven",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelSeven.src,
+    height: breatherPanelSeven.height,
+    width: breatherPanelSeven.width,
+    alt: "Breather Panel Seven"
+  },
+  description: "breather panel seven"
+},
+{
+  id: 41,
+  name: "Breather Panel Eight",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelEight.src,
+    height: breatherPanelEight.height,
+    width: breatherPanelEight.width,
+    alt: "Breather Panel Eight"
+  },
+  description: "breather panel eight"
+},
+{
+  id: 42,
+  name: "Breather Panel Nine",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelNine.src,
+    height: breatherPanelNine.height,
+    width: breatherPanelNine.width,
+    alt: "Breather Panel Nine"
+  },
+  description: "breather panel nine"
+},
+{
+  id: 43,
+  name: "Breather Panel Ten",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelTen.src,
+    height: breatherPanelTen.height,
+    width: breatherPanelTen.width,
+    alt: "Breather Panel Ten"
+  },
+  description: "breather panel ten"
+},
+{
+  id: 44,
+  name: "Breather Panel Eleven",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelEleven.src,
+    height: breatherPanelEleven.height,
+    width: breatherPanelEleven.width,
+    alt: "Breather Panel Eleven"
+  },
+  description: "breather panel eleven"
+},
+{
+  id: 45,
+  name: "Breather Panel Twelve",
+  slug: "breather-panels",
+  image: {
+    src: breatherPanelTwelve.src,
+    height: breatherPanelTwelve.height,
+    width: breatherPanelTwelve.width,
+    alt: "Breather Panel Twelve"
+  },
+  description: "breather panel twelve"
+},
+// =========================
+// 🆕 BUMPER PRODUCTS
+// =========================
+
+{
+  id: 47,
+  name: "Bumper One",
+  slug: "bumper",
+  image: {
+    src: bumperOne.src,
+    height: bumperOne.height,
+    width: bumperOne.width,
+    alt: "Bumper One"
+  },
+  description: "bumper one"
+},
+{
+  id: 48,
+  name: "Bumper Two",
+  slug: "bumper",
+  image: {
+    src: bumperTwo.src,
+    height: bumperTwo.height,
+    width: bumperTwo.width,
+    alt: "Bumper Two"
+  },
+  description: "bumper two"
+},
+{
+  id: 49,
+  name: "Bumper Three",
+  slug: "bumper",
+  image: {
+    src: bumperThree.src,
+    height: bumperThree.height,
+    width: bumperThree.width,
+    alt: "Bumper Three"
+  },
+  description: "bumper three"
+},
+{
+  id: 50,
+  name: "Bumper Four",
+  slug: "bumper",
+  image: {
+    src: bumperFour.src,
+    height: bumperFour.height,
+    width: bumperFour.width,
+    alt: "Bumper Four"
+  },
+  description: "bumper four"
+},
+{
+  id: 51,
+  name: "Bumper Five",
+  slug: "bumper",
+  image: {
+    src: bumperFive.src,
+    height: bumperFive.height,
+    width: bumperFive.width,
+    alt: "Bumper Five"
+  },
+  description: "bumper five"
+},
+{
+  id: 52,
+  name: "Bumper Six",
+  slug: "bumper",
+  image: {
+    src: bumperSix.src,
+    height: bumperSix.height,
+    width: bumperSix.width,
+    alt: "Bumper Six"
+  },
+  description: "bumper six"
+},
+
+
 ];
 
