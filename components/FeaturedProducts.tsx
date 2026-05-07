@@ -20,8 +20,9 @@ export default function FeaturedProducts({
 }: FeaturedProducts) {
   return (
     <div className="w-full">
+      
       {/* Image container */}
-      <div className="overflow-hidden rounded-md">
+      <div className="overflow-hidden rounded-sm">
         <Image
           src={image.src}
           width={600}
@@ -29,10 +30,10 @@ export default function FeaturedProducts({
           alt={image.alt || description}
           className="
             w-full
-            h-[220px] sm:h-[260px] md:h-[300px]
+            h-[320px] sm:h-[420px] md:h-[520px]
             object-cover
-            px-0
-            transition-transform duration-300
+            transition-transform
+            duration-300
             hover:scale-105
           "
         />
@@ -51,6 +52,7 @@ export default function FeaturedProducts({
           </p>
         )}
       </div>
+
     </div>
   );
 }

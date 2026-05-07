@@ -28,7 +28,7 @@ export default function layout({children}: {children: ReactNode}) {
     { id: 9, image: visa, alt: 'Visa' }
   ];
   return (
-    <div>
+  <div style={{ fontFamily: 'Times New Roman, serif' }}>
                 <header className='bg-black'>
                 <h2 className='text-center text-white py-4 text-2xl font-bold'>
                   Welcome to our Chrome Shop
