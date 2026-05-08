@@ -10,6 +10,7 @@ import visa from '@/images/visa.png';
 import applePay from '@/images/applePay.png';
 import googlePay from '@/images/googlePay.png';
 import React, { ReactNode } from 'react'
+import TopComponent from '@/components/TopComponent';
 
 export default function layout({children}: {children: ReactNode}) {
       const  paymentLogos = [
@@ -25,6 +26,7 @@ export default function layout({children}: {children: ReactNode}) {
   ];
   return (
     <div>
+       <TopComponent/>
         {children}
     <Subscribe/>
     <Footer paymentLogos={paymentLogos}/>

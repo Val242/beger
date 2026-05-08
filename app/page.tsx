@@ -19,6 +19,7 @@ import googlePay from '@/images/googlePay.png';
 import Products from '@/components/Products';
 import bg1 from '@/images/bg1.jpg'
 import bg2 from '@/images/bg2.jpg'
+import TopComponent from '@/components/TopComponent';
 //ssh
 
 function page() {
@@ -38,28 +39,7 @@ function page() {
 
   return (
     <div style={{ fontFamily: 'Times New Roman, serif' }}>
-      <header className='bg-black'>
-            <h2 className='text-center text-white py-4 text-2xl font-bold'>
-              Welcome to our Chrome Shop
-            </h2>
-      </header>
-<nav className="relative px-8 flex justify-between items-center">
-  <div className='flex items-center gap-4'>
-    <HamburgerMenu />
-    <Image src={logo} alt='Logo' width={250} height={250} />
-  </div>
-          <div className='flex gap-6 text-2xl cursor-pointer'>
-            <Search/>
-            <User/>
-            <ShoppingCart/>
-          </div>
-      </nav>
-      <div className='flex justify-center bg-black text-white items-center gap-4'>
-      <p className='text-center  py-2 text-[16px] font-bold '>
-            For USA Sales please email or text to order 
-      </p>
-      <MoveRight/>
-      </div>
+  <TopComponent/>
 <div className="relative w-full h-125">
   {/* Background images */}
   <div className="absolute inset-0 flex">
