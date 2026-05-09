@@ -8,7 +8,7 @@ export default function TopComponent() {
   return (
     <div>      <header className='bg-black'>
             <h2 className='text-center text-white py-4 text-2xl font-bold'>
-              Welcome to our Chrome Shop Valentine
+              Welcome to our Chrome Shop 
             </h2>
       </header>
 <nav className="relative px-8 flex justify-between items-center">

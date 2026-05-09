@@ -40,7 +40,7 @@ function page() {
   return (
     <div style={{ fontFamily: 'Times New Roman, serif' }}>
   <TopComponent/>
-<div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] overflow-hidden">
+<div className="relative w-full h-75 sm:h-100 md:h-125 lg:h-125 overflow-hidden">
   
   {/* Background images */}
   <div className="absolute inset-0 flex flex-col sm:flex-row">
@@ -64,21 +64,23 @@ function page() {
     </h2>
 
     <Link href="/collections">
-      <button
-        className="
-          text-white
-          border border-white
-          px-5 sm:px-6 md:px-8
-          py-2 sm:py-3
-          text-sm sm:text-base md:text-xl
-          tracking-[0.1rem]
-          bg-transparent
-          transition-all duration-300 ease-in-out
-          hover:ring-2 hover:ring-white
-        "
-      >
-        Show all
-      </button>
+ <button
+  className="
+    text-white
+    border-2 border-white
+    font-bold
+    px-5 sm:px-6 md:px-8
+    py-2 sm:py-3
+    text-sm sm:text-base md:text-xl
+    tracking-[0.12rem]
+    bg-transparent
+    transition-all duration-300 ease-in-out
+    hover:ring-4 hover:ring-white
+    hover:scale-[1.03]
+  "
+>
+  Shop all
+</button>
     </Link>
     
   </div>
