@@ -40,39 +40,49 @@ function page() {
   return (
     <div style={{ fontFamily: 'Times New Roman, serif' }}>
   <TopComponent/>
-<div className="relative w-full h-125">
+<div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] overflow-hidden">
+  
   {/* Background images */}
-  <div className="absolute inset-0 flex">
-    <Image src={bg1} alt="first bg" className="w-1/2 h-full object-cover" />
-    <Image src={bg2} alt="second bg" className="w-1/2 h-full object-cover" />
+  <div className="absolute inset-0 flex flex-col sm:flex-row">
+    <Image
+      src={bg1}
+      alt="first bg"
+      className="w-full sm:w-1/2 h-1/2 sm:h-full object-cover"
+    />
+    <Image
+      src={bg2}
+      alt="second bg"
+      className="w-full sm:w-1/2 h-1/2 sm:h-full object-cover"
+    />
   </div>
 
   {/* Overlay content */}
-  <div className="absolute left-1/2 bottom-20 transform -translate-x-1/2 text-center text-white">
-    <h2 className="text-6xl font-bold mb-4">
+  <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+    
+    <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
       Browse our latest products
     </h2>
 
-<Link href="/collections/all">
-<button
-  className="
-    text-white
-    border border-white
-    px-8 py-3
-    text-[1.5rem]
-    tracking-[0.1rem]
-    leading-[1.2]
-    bg-transparent
-    transition-all duration-300 ease-in-out
-    hover:ring-2 hover:ring-white
-  "
->
-  Show all
-</button>
-</Link>
+    <Link href="/collections">
+      <button
+        className="
+          text-white
+          border border-white
+          px-5 sm:px-6 md:px-8
+          py-2 sm:py-3
+          text-sm sm:text-base md:text-xl
+          tracking-[0.1rem]
+          bg-transparent
+          transition-all duration-300 ease-in-out
+          hover:ring-2 hover:ring-white
+        "
+      >
+        Show all
+      </button>
+    </Link>
+    
   </div>
 </div>
-
       <Products/>
 
       <div className='flex justify-center items-center py-8'>

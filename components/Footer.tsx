@@ -13,37 +13,42 @@ interface FooterProps {
 
 export default function Footer({ paymentLogos }: FooterProps) {
   return (
-    <footer className="p-4 sm:p-6 md:p-8">
+    <footer className="px-4 sm:px-6 md:px-8 py-8">
+
       {/* Payment logos */}
       <div className="border-t border-gray-300 pt-6">
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-10">
+
           {paymentLogos.map((payment) => (
-            <div
-              key={payment.id}
-              className="flex items-center justify-center"
-            >
+            <div key={payment.id} className="flex items-center justify-center">
               <Image
                 src={payment.image}
                 alt={payment.alt}
-                width={80}
-                height={50}
+                width={90}
+                height={60}
                 className="
                   object-contain
-                  w-[60px] sm:w-[70px] md:w-[80px]
+                  w-[55px] sm:w-[70px] md:w-[85px]
                   h-auto
                 "
               />
             </div>
           ))}
+
         </div>
       </div>
 
-      {/* Text */}
-      <p className="text-center text-xs sm:text-sm mt-6 text-gray-600 px-2">
-        © {new Date().getFullYear()} Berger Industries Inc. Powered by Shopify
-        <br className="sm:hidden" />
-        <span className="block sm:inline"> Privacy policy</span>
-      </p>
+      {/* Footer text */}
+      <div className="mt-6 text-center text-gray-600">
+        <p className="text-xs sm:text-sm leading-relaxed">
+          © {new Date().getFullYear()} Berger Industries Inc. Powered by Shopify
+        </p>
+
+        <p className="text-xs sm:text-sm mt-1">
+          Privacy policy
+        </p>
+      </div>
+
     </footer>
   );
 }
